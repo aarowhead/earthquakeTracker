@@ -1,6 +1,30 @@
 #map {
-  height: 500px;
-  /* The height is 400 pixels */
+  height: 400px;
   width: 500px;
-  /* The width is the width of the web page */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+#githubLink {
+  color: #fff;
+}
+
+#githubLink:hover {
+  color: #ccc;
+}
+
+#submitButton {
+  margin-top: 32px;
 }
