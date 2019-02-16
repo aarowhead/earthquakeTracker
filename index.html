@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Earthquake Tracker</title>
+  <link rel="stylesheet" href="/styles.css">
+  <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+  <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+</head>
+
+<body>
+  <span class="metadata-marker" style="display: none;" data-region_tag="html-body"></span>
+  <h3>Earthquake Tracker</h3>
+  <div class="bootstrap-iso">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <form>
+            <div class="form-group">
+              <label class="control-label" for="date">Start Date</label>
+              <input class="form-control" id="startDate" name="date" placeholder="MM/DD/YYY" type="text" />
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="date">End Date</label>
+              <input class="form-control" id="endDate" name="date" placeholder="MM/DD/YYY" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="magnitudeSelect">Minimum Magnitude</label>
+              <select class="form-control" id="magnitudeSelect">
+                <option>1.0</option>
+                <option>2.0</option>
+                <option>3.0</option>
+                <option>4.0</option>
+                <option>5.0</option>
+                <option>6.0</option>
+                <option>7.0</option>
+                <option>8.0</option>
+                <option>9.0</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary" id="submitButton" name="submit" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--The div element for the map -->
+  <div id="map"></div>
+  <!--  jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Bootstrap Date-Picker Plugin -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+  <script text="type/javascript" src="/script.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMcKb5mQ_Sfv8M-j8FQJx0Vl1GaCxSXZs&callback=initMap"></script>
+</body>
+
+</html>
